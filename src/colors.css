@@ -1,0 +1,18 @@
+:root {
+  --brand-primary: linear-gradient(180deg, #e35df7, #9747ff);
+  --brand-secondary: #42444a;
+  --pure-white: #ffffff;
+  --off-white: #e4e4e4;
+  --dust: #cecece;
+  --cement: #afafaf;
+  --smoke: #8f8f8f;
+  --cinder: #747474;
+  --elephant: #555555;
+  --slate: #343434;
+  --tarmac: #222222;
+  --off-black: #131313;
+  --error: #cb0000;
+  --link-focus: #1d6aff;
+  --success: #88f200;
+  --darkness: #070707;
+}

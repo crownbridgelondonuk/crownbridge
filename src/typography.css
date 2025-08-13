@@ -1,0 +1,91 @@
+:root {
+  /* Base font family */
+  --font-family-outfit: 'Outfit', sans-serif;
+
+  /* Weights */
+  --fw-regular: 400;
+  --fw-semibold: 600;
+
+  /* Jumbo sizes */
+  --fs-jumbo-desktop: 100px;
+  --lh-jumbo-desktop: 100px;
+  --ls-jumbo-desktop: -2px;
+
+  --fs-jumbo-mobile: 60px;
+  --lh-jumbo-mobile: 72px;
+  --ls-jumbo-mobile: -1.2px;
+
+  /* Display sizes */
+  --fs-display-desktop: 72px;
+  --lh-display-desktop: 70px;
+  --ls-display-desktop: -1.44px;
+
+  --fs-sdisplay-desktop: 60px;
+  --lh-sdisplay-desktop: 58px;
+  --ls-sdisplay-desktop: -1.44px;
+
+  --fs-display-mobile: 42px;
+  --lh-display-mobile: auto;
+  --ls-display-mobile: -0.84px;
+
+  --fs-h1-desktop: 40px;
+  --lh-h1-desktop: 44px;
+
+  --fs-h2-desktop: 32px;
+  --lh-h2-desktop: 40px;
+
+  --fs-h3-desktop: 24px;
+  --lh-h3-desktop: 32px;
+
+  --fs-h4-desktop: 20px;
+  --lh-h4-desktop: 24px;
+
+  --fs-h1-mobile: 32px;
+  --lh-h1-mobile: 38.4px;
+
+  --fs-h2-mobile: 28px;
+  --lh-h2-mobile: 33.6px;
+
+  --fs-h3-mobile: 24px;
+  --lh-h3-mobile: 28.8px;
+
+  --fs-h4-mobile: 20px;
+  --lh-h4-mobile: 24px;
+
+  /* Body sizes (desktop & mobile) */
+  --fs-body-xxl-desktop: 28px;
+  --lh-body-xxl-desktop: 36px;
+
+  --fs-body-xl-desktop: 24px;
+  --lh-body-xl-desktop: 28px;
+
+  --fs-body-l-desktop: 20px;
+  --lh-body-l-desktop: 28px;
+
+  --fs-body-m-desktop: 16px;
+  --lh-body-m-desktop: 20px;
+
+  --fs-body-s-desktop: 14px;
+  --lh-body-s-desktop: 17px;
+
+  --fs-body-xs-desktop: 12px;
+  --lh-body-xs-desktop: 16px;
+
+  --fs-body-xxl-mobile: 24px;
+  --lh-body-xxl-mobile: 36px;
+
+  --fs-body-xl-mobile: 20px;
+  --lh-body-xl-mobile: 28px;
+
+  --fs-body-l-mobile: 18px;
+  --lh-body-l-mobile: 28px;
+
+  --fs-body-m-mobile: 16px;
+  --lh-body-m-mobile: 20px;
+
+  --fs-body-s-mobile: 14px;
+  --lh-body-s-mobile: 17px;
+
+  --fs-body-xs-mobile: 12px;
+  --lh-body-xs-mobile: 16px;
+}
