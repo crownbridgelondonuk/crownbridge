@@ -1,35 +1,133 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./colors.css";
+import "./typography.css";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import navLogo from "./assets/navLogo.svg";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Apply from "./pages/Apply";
+
+import { Squash as Hamburger } from 'hamburger-react'
+import { useState, useEffect } from "react";
+
+function Nav() {
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <nav id="nav">
+      <div className="logo">
+        <Link to="/">
+          <img src={navLogo} alt="Crownbridge Logo" />
+        </Link>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/apply"><button>Apply</button></Link>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <div className="hamburger">
+        <Hamburger toggled={isOpen} toggle={setOpen} />
+      </div>
+
+      {isOpen && <div className="overlay" onClick={() => setOpen(false)} />}
+
+      <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
+        <Link to="/" onClick={() => setOpen(false)}>Home</Link>
+        <Link to="/about" onClick={() => setOpen(false)}>About Us</Link>
+        <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+        <Link to="/apply" onClick={() => setOpen(false)}>
+          Apply
+        </Link>
+      </div>
+
+    </nav>
+  );
 }
 
-export default App
+import footerLogo from "./assets/footerLogo.svg"
+import IconFacebook from "./assets/facebookIcon.svg";
+import IconInstagram from "./assets/instagramIcon.svg";
+import IconWhatsapp from "./assets/whatsappIcon.svg";
+import IconPhone from "./assets/phoneIcon.svg";
+function Footer() {
+  return (
+    
+    <footer id="footer">
+      <div className="footerTop">
+        <div className="footerLogo">
+          <img src={footerLogo} alt="Logo" />
+        </div>
+        <div className="footerRight">
+          <div className="footerNav" aria-label="Footer navigation">
+            <hr />
+            <div className="footerLinks">
+              <Link to="/" >Home</Link>
+              <Link to="/about" >About</Link>
+              <Link to="/contact" >Contact</Link>
+            </div>
+            <hr />
+          </div>
+          <div className="socials" aria-label="Social links">
+            <a target="_blank" href="https://www.facebook.com" className="social">
+              <img src={IconFacebook} alt="facebook" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com" className="social">
+              <img src={IconInstagram} alt="instagram" />
+            </a>
+            <a target="_blank" href="https://www.whatsapp.com" className="social">
+              <img src={IconWhatsapp} alt="whatsapp" />
+            </a>
+            <a target="_blank" href="https://www.example.com" className="social">
+              <img src={IconPhone} alt="phone" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr className="footerBreak" />
+      <div className="poweredBy">
+        <p>Powered by New Educational Order</p>
+      </div>
+    </footer>
+  );
+}
+
+import logoIcon from "./assets/logoIcon.svg"
+function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("load", () => {
+      setTimeout(() => setLoading(false), 800);
+    });
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loader">
+        <img src={logoIcon} alt="Loading..." className="loader-logo" style={{width: "80px"}} />
+        <p style={{margin: "0", fontSize: "var(--fs-h2-desktop)"}} >CROWNBRIDGE</p>
+        <div style={{margin: "0", fontSize: "var(--fs-body-s-desktop)"}} >LONDON INTERNATIONAL COLLEGE</div>
+      </div>
+    );
+  }
+  return (
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/apply" element={<Apply />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
