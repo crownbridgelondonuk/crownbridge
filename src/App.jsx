@@ -11,7 +11,7 @@ import Contact from "./pages/Contact";
 import Apply from "./pages/Apply";
 
 import { Squash as Hamburger } from 'hamburger-react'
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Nav() {
   const [isOpen, setOpen] = useState(false);
@@ -97,25 +97,8 @@ function Footer() {
   );
 }
 
-import logoIcon from "./assets/logoIcon.svg"
+
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    window.addEventListener("load", () => {
-      setTimeout(() => setLoading(false), 800);
-    });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="loader">
-        <img src={logoIcon} alt="Loading..." className="loader-logo" style={{width: "80px"}} />
-        <p style={{margin: "0", fontSize: "var(--fs-h2-desktop)"}} >CROWNBRIDGE</p>
-        <div style={{margin: "0", fontSize: "var(--fs-body-s-desktop)"}} >LONDON INTERNATIONAL COLLEGE</div>
-      </div>
-    );
-  }
   return (
     <Router>
       <Nav />
