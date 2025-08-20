@@ -1,6 +1,6 @@
 
 
-export default function Home() {
+export default function Apply() {
     return (
         <h1>Apply</h1>
     );
