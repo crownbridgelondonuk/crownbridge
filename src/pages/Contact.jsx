@@ -24,19 +24,19 @@ export default function Contact() {
                     <div className="address findCard">
                         <img src={addressIcon} alt="Address Icon" />
                         <h4>Address</h4>
-                        <p>D-29, Delhi Mercantile Society Delhi CHS P.E.C.H.S., Karachi, Pakistan</p>
                         <p>7 Tully Drive, Paddock Wood, TN12 6FP, UK</p>
+                        <p>Hexis College, BMCHS Plot # 371, towards Naheed Super Market, Karachi, Pakistan</p>
                     </div>
                     <div className="phone findCard">
                         <img src={phoneIcon} alt="Phone Icon" />
                         <h4>Phone</h4>
-                        <p>+92-336-6643947</p>
                         <p>+44-77-1548052</p>
+                        <p>+92-336-6643947</p>
                     </div>
                     <div className="email findCard">
                         <img src={emailIcon} alt="Email Icon" />
                         <h4>Email</h4>
-                        <p>info@crownbridge.co.uk</p>
+                        <p>info.crownbridge@gmail.com</p>
                     </div>
                 </div>
             </div>
