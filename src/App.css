@@ -246,3 +246,57 @@ a {
 .open {
   left: 0;
 }
+
+/* hover effct on nav links */
+
+.links a,
+.mobile-menu a,
+.footerLinks a {
+  position: relative;
+  width: auto;
+}
+
+.links a::after,
+.mobile-menu a::after,
+.footerLinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;  
+  width: 100%;
+  background: var(--slate);
+  border-radius: 4px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(.2,.8,.2,1);
+  will-change: transform;
+  pointer-events: none;
+}
+
+.footerLinks a::after {
+  background: var(--pure-white);
+  height: 2px;
+}
+
+.links a:hover::after,
+.mobile-menu a:hover::after,
+.footerLinks a:hover::after {
+  transform: scaleX(1);
+}
+
+.no-underline::after { display: none !important; }
+
+.links a button {
+  transition: all 0.5s cubic-bezier(.2,.8,.2,1);
+}
+
+.links a:hover button,
+.links a:hover button {
+  color: var(--darkness);
+  box-shadow: inset 0 0 0 2em var(--pure-white);
+}
+
+.active {
+  font-weight: var(--fw-semibold);
+}
