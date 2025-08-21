@@ -37,6 +37,8 @@
     align-items: flex-start;
     gap: 50px 20px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
 }
 
 .findCard img {
@@ -64,6 +66,10 @@
     gap: 10px;
 }
 
+.findCard:nth-child(2) {
+    width: 150px;
+}
+
 @media (max-width: 1000px) {
     .findus {
         margin: 50px 25px;
@@ -87,9 +93,9 @@
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
     .findCard {
-        width: 100%;
+        width: 80%;
     }
     .findCard p {
         font-size: var(--fs-body-m-mobile);
