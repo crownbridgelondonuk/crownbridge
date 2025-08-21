@@ -79,7 +79,7 @@
     }
     .findCards {
         gap: 20px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 }
 
@@ -93,7 +93,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     .findCard {
         width: 80%;
     }
