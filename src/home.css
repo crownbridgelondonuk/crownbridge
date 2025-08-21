@@ -43,7 +43,8 @@
 }
 
 .buttonBars button,
-.content button, .CTACard button {
+.content button,
+.CTACard button {
   width: 136px;
   padding: 12px 12px;
   box-sizing: border-box;
@@ -67,8 +68,11 @@
 }
 
 .buttonBars a:nth-child(1) button:hover,
-.head-tag:hover, .skipALevels button:hover, .buttonBars a:nth-child(1):focus button,
-.head-tag:focus, .skipALevels button:focus{
+.head-tag:hover,
+.skipALevels button:hover,
+.buttonBars a:nth-child(1):focus button,
+.head-tag:focus,
+.skipALevels button:focus {
   background-position: bottom right;
 }
 
@@ -76,7 +80,7 @@
   cursor: default;
 }
 
-.buttonBars a:nth-child(2) button{
+.buttonBars a:nth-child(2) button {
   background-color: var(--pure-white);
   color: var(--darkness);
   border: 2px solid var(--darkness);
@@ -258,6 +262,11 @@
   width: calc((241px * 3) + (25px * 2));
   overflow: hidden;
   position: relative;
+  cursor: grab;
+}
+
+.carousel-wrapper:active {
+  cursor: grabbing;
 }
 
 .carousel-wrapper::after {
@@ -479,43 +488,44 @@
 }
 
 .whoShouldJoin {
-    margin: 80px 104px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 44px;
+  margin: 80px 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 44px;
 }
 
-.joinHead h1{
+.joinHead h1 {
   font-size: var(--fs-h1-desktop);
   line-height: var(--lh-h1-desktop);
   letter-spacing: var(--ls-h1-desktop);
 }
 
 .joinSect {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .eligible {
-    width: 380px;
-    color: var(--pure-white);
-    background: var(--brand-primary);
-    border-radius: 30px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 380px;
+  color: var(--pure-white);
+  background: var(--brand-primary);
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.eligible h3, .eligible p {
-    margin: 0;
+.eligible h3,
+.eligible p {
+  margin: 0;
 }
 
 .eligible h3 {
@@ -532,61 +542,60 @@
 }
 
 .CTA {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    border: 2px solid var(--slate);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 2px solid var(--slate);
 }
 
 .CTA hr {
-    padding: 0;
-    margin: 0;
-    align-self: stretch;
-    height: inherit;
-    border: 1px solid var(--slate);
+  padding: 0;
+  margin: 0;
+  align-self: stretch;
+  height: inherit;
+  border: 1px solid var(--slate);
 }
 
 .CTACard {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 25px;
-    text-align: center;
-    gap: 15px;
-    align-self: stretch;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 25px;
+  text-align: center;
+  gap: 15px;
+  align-self: stretch;
 }
 
 .CTACard h3 {
-    margin: 0;
-    font-size: var(--fs-h1-desktop);
-    line-height: var(--lh-h1-desktop);
-    letter-spacing: var(--ls-h1-desktop);
+  margin: 0;
+  font-size: var(--fs-h1-desktop);
+  line-height: var(--lh-h1-desktop);
+  letter-spacing: var(--ls-h1-desktop);
 }
 
 .CTACard p {
-    margin: 0;
-    color: var(--cinder);
-    font-size: var(--fs-body-m-desktop);
-    line-height: var(--lh-body-m-desktop);
-    letter-spacing: var(--ls-body-m-desktop);
+  margin: 0;
+  color: var(--cinder);
+  font-size: var(--fs-body-m-desktop);
+  line-height: var(--lh-body-m-desktop);
+  letter-spacing: var(--ls-body-m-desktop);
 }
 
 .CTACard button {
-    width: 80%;
+  width: 80%;
 }
 
 .skipALevels button {
-    border: 2px solid var(--pure-white);
+  border: 2px solid var(--pure-white);
 }
 
 .stillUnsure button {
   border: 2px solid transparent;
   border-radius: 35px;
-  background:
-    linear-gradient(var(--pure-white), var(--pure-white)) padding-box,
+  background: linear-gradient(var(--pure-white), var(--pure-white)) padding-box,
     var(--brand-primary) border-box;
   transition: 0.35s ease;
   position: relative;
@@ -726,7 +735,9 @@
   .headerContent,
   .whyFoundation,
   .whereNext,
-  .qualitiesSection, .whoShouldJoin, .qualitiesSection {
+  .qualitiesSection,
+  .whoShouldJoin,
+  .qualitiesSection {
     margin: 60px 50px;
   }
   .faq {
@@ -807,7 +818,7 @@
     font-size: var(--fs-body-s-desktop);
     line-height: var(--lh-body-m-desktop);
   }
-  .joinHead h1{
+  .joinHead h1 {
     font-size: var(--fs-h3-desktop);
     line-height: var(--lh-h3-desktop);
     letter-spacing: var(--ls-h3-desktop);
@@ -834,6 +845,8 @@
     align-items: center;
     gap: 36px;
     min-height: 60vh;
+    border-right: 0;
+    border-left: 0;
   }
   .CTACard {
     align-self: center;
@@ -935,7 +948,7 @@
   .faq-box {
     width: 350px;
   }
-  .faq h1{
+  .faq h1 {
     font-size: var(--fs-jumbo-mobile);
     line-height: var(--lh-jumbo-mobile);
     letter-spacing: var(--ls-jumbo-mobile);
@@ -1009,7 +1022,7 @@
   .faq-box {
     width: 280px;
   }
-  .joinHead h1{
+  .joinHead h1 {
     font-size: var(--fs-h3-desktop);
     line-height: var(--lh-h3-desktop);
     letter-spacing: var(--ls-h3-desktop);
