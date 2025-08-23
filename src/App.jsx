@@ -162,14 +162,14 @@ function Footer() {
           <div className="socials" aria-label="Social links">
             <a
               target="_blank"
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/crownbridgelondon"
               className="social"
             >
               <img src={IconFacebook} alt="facebook" />
             </a>
             <a
               target="_blank"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/crownbridgelondon"
               className="social"
             >
               <img src={IconInstagram} alt="instagram" />
