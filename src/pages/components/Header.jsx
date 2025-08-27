@@ -20,7 +20,7 @@ export default function Header() {
       </p>
       <div className="buttonBars">
         <Link to="/apply" ><button>Apply Now</button></Link>
-        <Link to="/apply" ><button>Learn More</button></Link>
+        <Link to="/contact" ><button>Learn More</button></Link>
       </div>
     </div>
   );

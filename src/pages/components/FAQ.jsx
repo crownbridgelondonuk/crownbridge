@@ -76,7 +76,7 @@ export default function FAQ() {
   const queAns = [
     {
       question: "What is the fee for the program?",
-      answer: "The full program costs around 2,000 £, an affordable investment for an internationally recognized qualification."
+      answer: "The full program costs around 2,500 £, an affordable investment for an internationally recognized qualification."
     },
     {
       question: "Are installment plans offered?",
@@ -107,7 +107,7 @@ export default function FAQ() {
       </div>
       <div className="questions">
         {queAns.map((que, index) => (
-          <Question faqObject={que} key={que.question} num={index + 1}/>
+          <Question faqObject={que} key={index} num={index + 1}/>
         ))}
       </div>
     </div>
