@@ -3,6 +3,8 @@ import placeHolder2 from "../../assets/placeholder2.png"
 import placeHolder3 from "../../assets/placeholder3.png"
 import { Link } from "react-router-dom"
 
+import { track } from '@vercel/analytics';
+
 export default function Header() {
   const images = [placeHolder1, placeHolder2, placeHolder3]
 
@@ -23,7 +25,9 @@ export default function Header() {
       <p className="head-desc">Powered by New Educational Order - Approved by LRN (UK Board) & IBCC Pakistan</p>
       <div className="buttonBars" role="group" aria-label="Main action buttons">
         <Link to="/apply" aria-label="Apply now for Crownbridge Pre-U Foundation Program">
-          <button>Apply Now</button>
+          <button onClick={() => {
+    track("apply_button_clicked", { location: "hero-section" });
+  }} >Apply Now</button>
         </Link>
         <Link to="/contact" aria-label="Learn more about Crownbridge programs">
           <button>Learn More</button>
