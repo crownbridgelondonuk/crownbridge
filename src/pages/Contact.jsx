@@ -31,7 +31,7 @@ export default function Contact() {
                         <img src={phoneIcon} alt="Phone Icon" />
                         <h4>Phone</h4>
                         <p>+44-77-1548052</p>
-                        <p>+92-336-6643947</p>
+                        <p>+92-300-2286601</p>
                     </div>
                     <div className="email findCard">
                         <img src={emailIcon} alt="Email Icon" />
