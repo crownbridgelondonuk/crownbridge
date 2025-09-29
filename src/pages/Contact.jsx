@@ -24,13 +24,13 @@ export default function Contact() {
                     <div className="address findCard">
                         <img src={addressIcon} alt="Address Icon" />
                         <h4>Address</h4>
-                        <p>7 Tully Drive, Paddock Wood, TN12 6FP, UK</p>
-                        <p>Hexis College, BMCHS Plot # 371, towards Naheed Super Market, Karachi, Pakistan</p>
+                        <p> <strong>UK Office</strong> <br /> 7 Tully Drive, Paddock Wood, TN12 6FP, UK</p>
+                        <p> <strong>Pakistan Office</strong> <br /> BMCHS Plot # 371, towards Naheed Super Market, Karachi, Pakistan</p>
                     </div>
                     <div className="phone findCard">
                         <img src={phoneIcon} alt="Phone Icon" />
                         <h4>Phone</h4>
-                        <p>+44-77-1548052</p>
+                        <p>+44-77-43480529</p>
                         <p>+92-300-2286601</p>
                     </div>
                     <div className="email findCard">
