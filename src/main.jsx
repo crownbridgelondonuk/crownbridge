@@ -4,11 +4,13 @@ import './index.css'
 import App from './App.jsx'
 
 import { inject } from '@vercel/analytics'
-
 inject()
+
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
+    <SpeedInsights /> {/* Collects Web Vitals */}
   </StrictMode>,
 )
