@@ -29,7 +29,7 @@ export default function Header() {
     track("apply_button_clicked", { location: "hero-section" });
   }} >Apply Now</button>
         </Link>
-        <Link to="/contact" aria-label="Learn more about Crownbridge programs">
+        <Link to="/about" aria-label="Learn more about Crownbridge">
           <button>Learn More</button>
         </Link>
       </div>
