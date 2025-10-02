@@ -30,7 +30,7 @@ export default function About() {
         <div className="introContent">
           <h2>What is Crownbridge?</h2>
           <p>
-            Crownbridge is a pathway college in Pakistan committed to helping students achieve their dreams of studying
+            Crownbridge is a college in Pakistan committed to helping students achieve their dreams of studying
             at leading universities worldwide.
             Through LRN's Pre-U Foundation Program, we offer a globally recognized and affordable alternative to A-Levels
             and Intermediate.
