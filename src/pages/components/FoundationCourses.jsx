@@ -44,7 +44,7 @@ export default function FoundationCourses() {
   };
 
   return (
-    <section className="coursesSection" aria-labelledby="coursesTitle">
+    <section className="coursesSection" aria-labelledby="coursesTitle" id="coursesOffered" >
       <div className="coursesInner">
         <header className="coursesHeader">
           <h2 id="coursesTitle" className="coursesTitle">
