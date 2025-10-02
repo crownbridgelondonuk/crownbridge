@@ -30,6 +30,18 @@
 .findus h3 {
     font-size: var(--fs-h1-desktop);
     line-height: var(--ls-h1-desktop);
+    position: relative;
+}
+
+.findus h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 4px;
+  width: 20%;
+  border-radius: 999px;
+  background: var(--brand-primary);
 }
 
 .findCards {
@@ -100,5 +112,8 @@
     .findCard p {
         font-size: var(--fs-body-m-mobile);
         line-height: var(--lh-body-m-mobile);
+    }
+    .findus h3::after {
+        width: 150px;
     }
 }
