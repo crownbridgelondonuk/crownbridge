@@ -9,6 +9,7 @@ import FAQ from "./components/FAQ"
 import WhoShouldJoin from "./components/WhoShouldJoin"
 import SkipALevels from "./components/SkipALevels"
 import Unsure from "./components/Unsure"
+import FoundationCourses from "./components/FoundationCourses"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhereNext />
       <Banner />
       <USP />
+      <FoundationCourses />
       <FAQ />
       <WhoShouldJoin />
       <section className="CTA" aria-label="Call to action section">
