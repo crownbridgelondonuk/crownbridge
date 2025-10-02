@@ -56,7 +56,7 @@ function Nav() {
           Home
         </Link>
 
-        {/* <Link
+        <Link
           to="/about"
           className={active === "about" ? "active" : ""}
           onClick={() => {
@@ -64,7 +64,7 @@ function Nav() {
           }}
         >
           About
-        </Link> */}
+        </Link>
 
         <Link
           to="/contact"
@@ -104,7 +104,7 @@ function Nav() {
         >
           Home
         </Link>
-        {/* <Link
+        <Link
           to="/about"
           onClick={() => {
             setOpen(false);
@@ -113,7 +113,7 @@ function Nav() {
           className={active === "about" ? "active" : ""}
         >
           About Us
-        </Link> */}
+        </Link>
         <Link
           to="/contact"
           onClick={() => {
@@ -156,9 +156,8 @@ function Footer() {
             <hr />
             <div className="footerLinks">
               <Link to="/">Home</Link>
-              {/* <Link to="/about">About</Link> */}
+              <Link to="/about">About</Link>
               <Link to="/contact">Contact</Link>
-              <Link to="/apply">Apply</Link>
             </div>
             <hr />
           </div>
@@ -210,7 +209,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/apply" element={<Apply />} />
         <Route path="*" element={<NotFound />} /> 
