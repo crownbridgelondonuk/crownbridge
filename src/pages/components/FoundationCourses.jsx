@@ -142,7 +142,15 @@ export default function FoundationCourses() {
                     </ul>
 
                     <div className="note">
-                      <strong>Pick 3 electives</strong>
+                      {cat !== "Medical" && (
+                        <strong>Pick 3 electives</strong>
+                      )}
+                      {cat === "Medical" && (
+                      
+                        <div>
+                          <strong> Note: This category is intended for students applying abroad only.</strong>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </details>

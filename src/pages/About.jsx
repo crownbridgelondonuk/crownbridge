@@ -9,8 +9,6 @@ import DirectorBryleen from "../assets/Director - Bryleen Sebastian.png"
 import DirectorRahat from "../assets/Director - Rahat Ali Khan.png"
 import DirectorJulia from "../assets/Director - Julia Richard.png"
 
-
-
 export default function About() {
   return (
     <div id="about">
@@ -115,10 +113,6 @@ export default function About() {
           <div className="programDetail">
             <h4>Duration</h4>
             <p>12-14 Months</p>
-          </div>
-          <div className="programDetail">
-            <h4>Credits</h4>
-            <p>120 <span className="small">(6 Units x 20)</span></p>
           </div>
           <div className="programDetail">
             <h4>Affiliation</h4>
