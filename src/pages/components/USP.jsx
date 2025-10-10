@@ -37,7 +37,7 @@ export default function USP() {
             alt="Stress-free icon representing relaxed learning environment"
           />
           <h3>Stress-Free Learning</h3>
-          <p>100% project and assignment-based learning — no cramming, no exam anxiety.</p>
+          <p>Study in a supportive environment that eases pressure and keeps you focused on real progress.</p>
         </article>
       </div>
     </section>

@@ -23,7 +23,7 @@ export default function WhyFoundation() {
         </div>
         <div className="point" role="listitem">
           <img src={learningIcon || "/placeholder.svg"} alt="Stress-free learning methodology icon" />
-          <p>Stress-Free Learning, 100% Project & Assignment Based</p>
+          <p>Stress-Free Learning, focused on projects and assignments</p>
         </div>
         <div className="point" role="listitem">
           <img src={fastIcon || "/placeholder.svg"} alt="Fast completion timeline icon" />
